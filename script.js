@@ -9,17 +9,17 @@ function showMessage() {
     let FR = "FR" || "fr";
     let AI = "AI";
     let Ai = "Ai" || "ai";
-    let resultText = "";
+    let resultOfText = "";
 
    if (message.indexOf("FR")!==-1){
-        resultText = 'The message ' + message + " " + 'is legitimate! ';
+        resultOfText = 'The message ' + message + " " + 'is legitimate! ';
     } else if (message.indexOf("AI")!==-1) {
-        resultText  = 'The message' + message + " " + 'is legitimate! ';
+        resultOfText  = 'The message' + message + " " + 'is legitimate! ';
     } else if (message.indexOf("aI")!==-1 || message.indexOf("Ai")!==-1) {
-        resultText = 'The message ' + message + " " + 'is tampered with! ';
+        resultOfText = 'The message ' + message + " " + 'is tampered with! ';
     } else {
-        resultText = 'The message ' + message + " " + 'is yet to be encoded!';
+        resultOfText = 'The message ' + message + " " + 'is yet to be encoded!';
     }
-    document.getElementById("result").innerText = resultText;
+    document.getElementById("result").innerText = resultOfText;
     
 }   
